@@ -1,0 +1,12 @@
+name: CI DevOps Example
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v2
+      - name: Configurar entorno
+        run: echo "Ejecutando pipeline de integración continua"
